@@ -1,0 +1,29 @@
+m= int(input())
+n = int(input())
+o= int(input())
+if m<=0:
+    print("Invalid subscription duration")
+else:
+    
+    if m<=3:
+        x=50*m
+    elif m<=6:
+        x=45*m
+    else:
+        
+        x=40*m
+    y=x
+
+    if n==1:
+        y+=100
+    elif n==2:
+        y*=0.85
+    elif n==3:
+        y=y
+
+    
+    if o==1:
+        y*=0.95
+  
+
+    print(int(y))
